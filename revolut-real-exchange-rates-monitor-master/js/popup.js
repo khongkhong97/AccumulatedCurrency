@@ -51,7 +51,7 @@ document.addEventListener('keyup', function(event) {
     xmlhttp.onreadystatechange = function(){
         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
     for(var x = 1; x < rowCount; x++){
-        if(x!=2){
+        if(x!=1){
             if(parseFloat(table.rows[x].cells[1].getElementsByTagName('input')[0].value) > 0){
             amountInput = parseFloat(table.rows[x].cells[1].getElementsByTagName('input')[0].value);
             }
